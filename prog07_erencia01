@@ -1,0 +1,25 @@
+class persona():
+    def __init__(self,nom, ap, am, edad):
+        self.nom=nom
+        self.ap=ap
+        self.am=am
+        self.edad=edad
+
+    def muestra(self):
+        print("Nombre           : ",self.nom)
+        print("Apellido Paterno : ",self.ap)
+        print("Apellido Materno : ",self.am)
+        print("Edad             : ",self.edad)
+
+    #Termina la clase persona
+
+class estudiante(persona):
+    pass
+
+p1=persona("Persona 1","Peres","López",35)
+p1.muestra()
+print("-"*45)
+
+p2=estudiante("Persona 2","Dias","Reyes",23)
+p2.muestra()
+print("-"*45)
